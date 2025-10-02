@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <Switch
+        android:id="@+id/javascript_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable JavaScript"
+        android:textColor="@color/textColor" />
+
+    <Switch
+        android:id="@+id/images_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Images"
+        android:textColor="@color/textColor" />
+
+</LinearLayout>
