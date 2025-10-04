@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/bg"
+     android:padding="8dp"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center_vertical"
+         android:paddingBottom="6dp">
+
+        <ImageButton
+             android:layout_height="30dp"
+             android:layout_width="30dp"
+             android:src="@drawable/ic_chevron_left_24"
+             android:contentDescription="Back"
+             android:background="@drawable/bg_icon_button"
+             android:layout_marginRight="4dp"
+             style="@style/NB.IconButton"
+             android:id="@+id/backBtn" />
+
+        <ImageButton
+             android:layout_height="30dp"
+             android:layout_width="30dp"
+             android:src="@drawable/ic_chevron_right_24"
+             android:contentDescription="Forward"
+             android:background="@drawable/bg_icon_button"
+             android:layout_marginRight="6dp"
+             style="@style/NB.IconButton"
+             android:id="@+id/fwdBtn" />
+
+        <EditText
+             android:layout_height="32dp"
+             android:layout_width="5dp"
+             android:imeOptions="actionGo"
+             android:paddingRight="10dp"
+             android:ellipsize="end"
+             android:singleLine="true"
+             android:textColor="@color/on_surface"
+             android:minWidth="5dp"
+             android:background="@drawable/bg_rounded_container"
+             android:hint="url.."
+             android:textColorHint="@color/hint"
+             android:paddingLeft="10dp"
+             android:layout_marginRight="6dp"
+             android:maxLines="1"
+             android:layout_weight="1"
+             android:inputType="textUri"
+             android:id="@+id/urlInput" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="38dp"
+             android:layout_width="30dp"
+             app:icon="@drawable/ic_refresh"
+             android:paddingRight="6dp"
+             android:textSize="4sp"
+             android:paddingLeft="6dp"
+             android:layout_marginRight="4dp"
+             style="@style/NB.MiniButton"
+             android:id="@+id/goBtn"
+             android:text="GO"
+             app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="38dp"
+             android:layout_width="30dp"
+             app:icon="@drawable/ic_copy"
+             android:paddingRight="6dp"
+             android:textSize="4sp"
+             android:paddingLeft="6dp"
+             android:layout_marginRight="4dp"
+             style="@style/NB.MiniButton"
+             android:id="@+id/clipBtn"
+             android:text="Copy"
+             app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="38dp"
+             android:layout_width="38dp"
+             app:icon="@drawable/ic_settings"
+             android:paddingRight="6dp"
+             android:textSize="4sp"
+             android:paddingLeft="6dp"
+             android:layout_marginRight="4dp"
+             style="@style/NB.MiniButton"
+             android:id="@+id/settingsBtn"
+             android:text="Settings"
+             app:iconGravity="textStart" />
+
+    </LinearLayout>
+
+    <ProgressBar
+         android:layout_height="1dp"
+         android:layout_width="match_parent"
+         android:max="100"
+         android:indeterminate="false"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:progress="0"
+         android:id="@+id/progress" />
+
+    <android.webkit.WebView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:id="@+id/webview">
+
+    </android.webkit.WebView>
+
+</LinearLayout>

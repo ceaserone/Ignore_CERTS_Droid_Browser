@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="12dp"/>
+    <!-- Fill color of the bar -->
+    <solid android:color="@color/on_surface" />   <!-- or any background you like -->
+    <!-- Outline stroke -->
+    <stroke
+        android:width="10dp"
+        android:color="#000000"/> <!-- black outline -->
+</shape>

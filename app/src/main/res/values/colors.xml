@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand / surface palette -->
+    <color name="brand_primary">#D32F2F</color>
+    <color name="on_brand_primary">#FFFFFF</color>
+
+    <color name="surface">#1F2125</color>
+    <color name="on_surface">#ECEFF1</color>
+
+    <color name="surface_variant">#2B2D31</color>
+    <color name="outline">#3A3D43</color>
+
+    <color name="bg">#14161A</color>
+    <color name="hint">#969FAB</color>
+
+    <!-- ripple helper -->
+    <color name="ripple_on_dark">#22FFFFFF</color>
+
+    <!-- Aliases expected by custom drawables -->
+    <color name="synack_ripple">@color/ripple_on_dark</color>
+    <color name="synack_surface">@color/surface</color>
+</resources>

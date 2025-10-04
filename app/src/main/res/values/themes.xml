@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NoBadCertsMF" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/on_brand_primary</item>
+
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOutline">@color/outline</item>
+
+        <item name="android:statusBarColor">@color/surface_variant</item>
+        <item name="android:navigationBarColor">@color/surface_variant</item>
+
+        <item name="materialButtonStyle">@style/NB.Button</item>
+        <item name="imageButtonStyle">@style/NB.IconButton</item>
+    </style>
+
+    <style name="NB.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">44dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="iconPadding">8dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+    </style>
+
+    <!-- Ultra-compact toolbar button -->
+    <style name="NB.MiniButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">28dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="iconSize">10dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textSize">6sp</item>
+    </style>
+
+    <style name="NB.IconButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:minHeight">36dp</item>
+        <item name="android:minWidth">36dp</item>
+    </style>
+
+</resources>

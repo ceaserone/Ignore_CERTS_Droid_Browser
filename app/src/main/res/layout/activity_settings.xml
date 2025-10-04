@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Settings" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/javascript_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable JavaScript" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/images_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Load Images" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/ignore_ssl_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ignore SSL certificate errors" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/dom_storage_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable DOM Storage" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/mixed_content_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Allow Mixed Content" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/desktop_ua_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request Desktop Site (UA override)" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/zoom_controls_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Zoom Controls" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/dark_theme_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dark Theme" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clear_cookies_button"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear Cookies"
+                android:layout_marginTop="16dp"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconGravity="textStart" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
